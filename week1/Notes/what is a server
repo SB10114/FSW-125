@@ -1,0 +1,74 @@
+A server is a computer designed to process requests and deliver data to another computer over the internet or a local network. A well-known type of server is a web server where web pages can be accessed over the internet through a client like a web browser. However, there are several types of servers, including local ones like file servers that store data within an intranet network.
+
+
+What Does a Server Do in a Computer Network?
+Although any computer running the necessary software can function as a server, the most typical use of the word references the enormous, high-powered machines that push and pull data from the internet.
+
+Most computer networks support one or more servers that handle specialized tasks. As a rule, the larger the network in terms of clients that connect to it or the amount of data that it moves, the more likely it is that several servers play a role, each dedicated to a specific purpose.
+
+The server is the software that handles a specific task. However, the powerful hardware that supports this software is also called a server. This is because the server software that coordinates a network of hundreds or thousands of clients requires hardware that's more robust than computers for consumer use.
+
+Common Types of Servers
+While some dedicated servers focus on one function, such as a print server or database server, some implementations use one server for multiple purposes.
+
+
+A large, general-purpose network that supports a medium-sized company likely deploys several types of servers, including:
+
+Web server: A web server show pages and runs apps through web browsers. The server your browser is connected to now is a web server that delivers this page and the images on it. The client program, in this case, is a browser like Internet Explorer, Chrome, Firefox, Opera, or Safari. Web servers are used for many tasks in addition to delivering simple text and images, such as uploading and backing up files online through a cloud storage service or online backup service.
+Email server: Email servers send and receive email messages. If you have an email client on your computer, the software connects to an IMAP or POP server to download your messages to your computer, and an SMTP server to send messages back through the email server.
+FTP server: FTP servers move files through File Transfer Protocol tools. FTP servers are accessible remotely using FTP client programs, which connect to the file share on the server, either through the server's built-in FTP capabilities or with a dedicated FTP server program.
+
+Identity Server: Identity servers support logins and security roles for authorized users.
+
+Hundreds of specialized server types support computer networks. Apart from the common corporate types, home users often interface with online game servers, chat servers, and audio and video streaming servers, among others.
+
+Some servers exist for a specific purpose but aren't necessarily interacted with in any meaningful way. DNS servers and proxy servers are some examples.
+
+Types of Network Servers
+Many networks on the internet employ a client-server networking model that integrates websites and communication services.
+
+
+An alternative model, called peer-to-peer networking, allows all the devices on a network to function as either a server or client on an as-needed basis. Peer networks offer a greater degree of privacy because communication between computers is narrowly targeted. However, due in part to bandwidth limitations, most implementations of peer-to-peer networking aren't robust enough to support large traffic spikes.
+
+Understanding Server Clusters
+The word cluster is used broadly in computer networking to refer to an implementation of shared computing resources. Typically, a cluster integrates the resources of two or more computing devices that could otherwise function separately for some common purpose (often a workstation or server device).
+
+Illustration of a server cluster
+Lifewire
+A web server farm is a collection of networked web servers, each with access to content on the same site. These servers function as a cluster conceptually. However, purists debate the technical classification of a server farm as a cluster, depending on the details of the hardware and software configuration.
+
+
+Computer Servers at Home
+Because servers are software, people can run servers at home, accessible either to devices attached to their home network or devices outside the network. For example, some network-aware hard drives use the Network Attached Storage server protocol to allow different PCs on a home network to access a shared set of files.
+
+
+An illustration of servers in a home network.
+Lifewire
+Plex media server software helps users view digital media on TVs and entertainment devices regardless of whether the data exists in the cloud or on a local PC.
+
+The Ins-and-Outs of Media Server Software Solutions
+If your network is set up to allow port forwards, you can accept incoming requests from outside your network to make your home server act as a server from a big company like Facebook or Google (where anyone can access your resources).
+
+However, not all home computers and internet connections are suitable for lots of traffic. Bandwidth, storage, RAM, and other system resources are factors that affect how large of a home server you can support. Most home operating systems are also void of server-related features.
+
+More Information on Servers
+Since uptime is critically important for most servers, servers aren't designed to shut down but instead run 24/7. However, servers sometimes go down intentionally for scheduled maintenance, which is why some websites and services notify users of scheduled downtime or scheduled maintenance. Servers might also go down unintentionally during something like a DDoS attack.
+
+A web server that reports an error due to downtime—whether intentional or not—might do so using a standard HTTP status code.
+
+When a web server takes down information permanently, or even temporarily, you might still be able to access those files if a third-party service archived it. Wayback Machine is one example of a web archiver that stores snapshots of web pages and files stored on web servers.
+
+Large businesses that have multiple servers don't typically access these servers locally, like with a keyboard and mouse, but instead by remote access. These servers are also sometimes virtual machines, meaning that one storage device can host multiple servers, which saves physical space and money.
+
+FAQ
+What does a proxy server do?
+A proxy server serves as an extra layer of protection between you and the sites you visit. Connecting to a proxy server hides your IP address from the other servers you connect with since they see the proxy server's address instead. Do an internet search for “free proxy servers” to find dozens of options.
+
+What does a DNS server do?
+DNS servers store databases of public IP addresses. When you enter a URL in your browser, a DNS server translates it to an IP address, allowing you to connect with the appropriate web server.
+
+What does a DHCP server do?
+DHCP servers are responsible for assigning IP addresses using the Dynamic Host Configuration Protocol (DHCP). In most home Wi-Fi networks, the router does this job, but larger networks may have a dedicated DHCP server.
+
+What is a Discord server?
+Discord is a tool for text, voice, and video chat that is geared toward gaming communities. You join or make a Discord server to communicate with people from all over the world with similar interests. Discord servers can be public or private.
