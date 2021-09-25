@@ -1,0 +1,3 @@
+Hello, here is the week 3 live summary I promised you.
+
+The first few slides go over installation and usage of Node Package Manager (NPM). This is the package manager for node which allows us to install and run various packages locally. We then go over how to install Express, what it is: a node framework used to build servers, and how it works. Then you define and discuss routing. Next we move onto HTTP method, and then finally brefily talk about URL building and how to run them through Nodemon.
