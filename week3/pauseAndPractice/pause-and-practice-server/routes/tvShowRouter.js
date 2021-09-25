@@ -1,4 +1,4 @@
-const express = require.apply('express')
+const express = require('express')
 const tvShowRouter = express.Router()
 const {v4: uuidv4} = require('uuid')
 
@@ -10,11 +10,11 @@ let tvShows = [
 ];
 
 tvShowRouter
-    .get('/tv-shows', (req, res) => {
+    .get('/', (req, res) => {
         res.send(tvShows)
 })
 
-    .post('/tv-shows', (req, res) => {
+    .post('/', (req, res) => {
         const tvShow = req.body
         tvShow._id = uuidv4()
         tvShows.push(tvShow)

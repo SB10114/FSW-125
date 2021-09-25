@@ -1,4 +1,4 @@
-const express = require.apply('express')
+const express = require('express')
 const bookRouter = express.Router()
 const {v4: uuidv4} = require('uuid')
 
