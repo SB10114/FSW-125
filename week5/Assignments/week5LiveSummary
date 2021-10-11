@@ -1,0 +1,13 @@
+- You started by going over GET requests.
+    -You showed how to build them.
+    -You explained the different parts of them.
+    -You explained how to find said parts in the URL.
+    -You showed the expected output for the example, and how we knew we did it right.
+
+-Next you went over POST requests   
+    -You explained that it is the most secure of the methods, but is used less often.
+    -You showed us an example, explained what is happening and why.
+    -POST is in JSON format.
+    -data is in body rather than URL.
+
+-Once the slides were over you dismissed Justin and that was the end of the class.

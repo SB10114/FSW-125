@@ -1,0 +1,15 @@
+h1, p {
+  margin: 5px;
+}
+
+book-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 32px;
+}
+
+.book {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px;
+}
