@@ -25,6 +25,7 @@ function AddBounty(props) {
     }
     const styles = {
         padding: '50px',
+        textAlign: "center"
     }
     return (
        
