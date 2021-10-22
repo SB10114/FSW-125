@@ -5,9 +5,9 @@ function AddBounty(props) {
     const initInputs = {
         firstName: props.firstName || '',
         lastName: props.lastName || '',
-        status: props.living || '',
-        bounty: props.bountyAmount || '',
-        allegience: props.type
+        living: props.living || '',
+        bountyAmount: props.bountyAmount || '',
+        type: props.type
     }
 
     const [inputs, setInputs] = useState(initInputs)
@@ -45,22 +45,22 @@ function AddBounty(props) {
 
                 <input 
                 type='text'
-                name='status'
-                value={inputs.status}
+                name='living'
+                value={inputs.living}
                 onChange={handleChange}
                 placeholder='Life Status: ' />
 
                 <input 
                 type='text'
-                name='bounty'
-                value={inputs.bounty}
+                name='bountyAmount'
+                value={inputs.bountyAmount}
                 onChange={handleChange}
                 placeholder='Bounty Amount: ' />
 
                 <input 
                 type='text'
-                name='allegience'
-                value={inputs.allegience}
+                name='type'
+                value={inputs.type}
                 onChange={handleChange}
                 placeholder='Allegience: ' />
 
