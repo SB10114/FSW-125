@@ -4,7 +4,7 @@ import './App.css';
 import AddSeries from './Components/AddSeries';
 //import DeleteSeries from './Components/DeleteSeries';
 import BookRender from './Components/BookRender';
-//import UpdateSeries from './Components/UpdateSeries';
+import UpdateSeries from './Components/UpdateSeries';
 
 function App() {
 
@@ -56,15 +56,18 @@ function App() {
     getBook()
   }, [])
 
+  const styles1 ={
+    marginLeft: "542px"
+  }
   return (
   <div>
     <div>
       <AddSeries submit={addSeries} />
   </div>
-   <div>
-     <input name="query" onChange={handleChange}></input>
-     <button onClick={getOneBook}>Search</button>
-   </div>
+   <form style={styles1}>
+     <input  name="query" onChange={handleChange} placeholder= "Enter # in series:"></input>
+     <button onClick={getOneBook}>Search by #</button>
+   </form>
   <div>
       {book.map((books, index) => 
       <BookRender 
@@ -75,8 +78,9 @@ function App() {
           numberOfBooks = {books.numberOfBooks}
           bookTitles = {books.bookTitles}
           id = {books._id} 
-          deleteSeries = {deleteSeries} 
           updateSeries = {updateSeries}
+          deleteSeries = {deleteSeries} 
+          
           />
       )}
     </div>

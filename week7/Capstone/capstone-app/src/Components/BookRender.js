@@ -5,11 +5,12 @@ function BookRender({seriesTitle, author, readAll, deleteSeries, updateSeries, n
 
     const myStyle= {
         color: "black",
-        padding: "15px",
-        fontFamily: "Arial",
+        padding: "10px",
+        marginTop: "5px",
+        fontFamily: "Italic",
         textAlign: "center",
-        borderWidth: 4,
-        borderStyle: "solid",
+        borderWidth: 2,
+        borderStyle: "dashed",
         borderColor: "black",
       }
 

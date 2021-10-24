@@ -25,9 +25,13 @@ function UpdateSeries(props) {
         setInputs(prevInputs => ({...prevInputs, [name]: value}))
     }
 
+    const styles = {
+        textAlign: "center",
+        margin: "10px"
+    }
 
     return(
-        <form onSubmit={handleSubmit}>
+        <form style={styles} onSubmit={handleSubmit}>
                  <input 
                 type="text"
                 name="seriesTitle"

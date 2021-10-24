@@ -27,7 +27,8 @@ function AddSeries(props) {
     }
 
     const styles = {
-        padding: '50px',
+        padding: '10px',
+        marginTop: '50px',
         textAlign: "center"
     }
     return (
