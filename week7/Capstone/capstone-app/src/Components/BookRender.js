@@ -1,30 +1,50 @@
+import { useState } from "react";
 import DeleteSeries from "./DeleteSeries";
 import UpdateSeries from './UpdateSeries';
 
 function BookRender({seriesTitle, author, readAll, deleteSeries, updateSeries, numberOfBooks, bookTitles, id}) {
 
-    const myStyle= {
-        color: "black",
-        padding: "10px",
-        marginTop: "5px",
-        fontFamily: "Italic",
-        textAlign: "center",
-        borderWidth: 2,
-        borderStyle: "dashed",
-        borderColor: "black",
-      }
+
+    const [editMode, setEditMode] = useState(false)
+
+    function setEdit(edit) {
+      setEditMode(edit)
+    }
+
 
     return (
-        <div style={myStyle}>
-            <p> Series: {seriesTitle} </p>
-            <p> Author: {author} </p>
-            <p> Read: {readAll ? 'true' : 'false'}</p>
-            <p> # in series: {numberOfBooks} </p>
-            <p> Book Titles: {bookTitles} </p>
-            <p> id = {id} </p>
+        <div className = "inputs">
 
-          <DeleteSeries id = {id} submit = {deleteSeries} />
-          <UpdateSeries id = {id} submit = {updateSeries} />
+          { !editMode ?
+            <>
+              <p> Series: {seriesTitle} </p>
+              <p> Author: {author} </p>
+              <p> Read: {readAll ? 'true' : 'false'}</p>
+              <p> # in series: {numberOfBooks} </p>
+              <p> Book Titles: {bookTitles} </p>
+              <p> id = {id} </p>
+
+              <DeleteSeries id = {id} submit = {deleteSeries} />
+
+              <button onClick={() => setEdit(true)}>Edit</button>
+            </>
+            :
+            <>
+              <UpdateSeries 
+                id = {id} 
+                submit = {updateSeries} 
+                edit = {setEdit}
+                seriesTitle={seriesTitle}
+                author = {author}
+                readAll = {readAll}
+                numberOfBooks = {numberOfBooks}
+                bookTitles = {bookTitles}
+              />
+              <button onClick={() => setEdit(false)}>Cancel</button>
+            </>
+
+          }
+
         </div>
     )
 }

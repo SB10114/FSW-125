@@ -26,14 +26,11 @@ function AddSeries(props) {
         setInputs(initInputs)
     }
 
-    const styles = {
-        padding: '10px',
-        marginTop: '50px',
-        textAlign: "center"
-    }
+
     return (
        
-        <form style = {styles} onSubmit={handleSubmit}>
+        <form className = "addForm" onSubmit={handleSubmit}>
+          <span>
             <input 
                 type="text"
                 name="seriesTitle"
@@ -72,7 +69,7 @@ function AddSeries(props) {
                 onChange={handleChange}
                 placeholder="Book titles: "
                 />
-
+            </span>
             <button>Add Series</button>
         </form>
     )

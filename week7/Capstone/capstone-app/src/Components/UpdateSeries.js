@@ -16,8 +16,9 @@ function UpdateSeries(props) {
     function handleSubmit(e) {
         e.preventDefault()
 
-        props.submit(inputs.id, inputs)
+        props.submit(id, inputs)
         setId(initInputs)
+        props.edit(false)
     }
     
     function handleChange(e) {
@@ -25,20 +26,22 @@ function UpdateSeries(props) {
         setInputs(prevInputs => ({...prevInputs, [name]: value}))
     }
 
-    const styles = {
-        textAlign: "center",
-        margin: "10px"
-    }
 
     return(
-        <form style={styles} onSubmit={handleSubmit}>
-                 <input 
+        <form className = "updateButton" onSubmit={handleSubmit}>
+            <h1>
+                {inputs.seriesTitle}
+            </h1>
+            <p>
+            <input 
                 type="text"
                 name="seriesTitle"
                 value={inputs.seriesTitle}
                 onChange={handleChange}
                 placeholder="Enter Series Title:"
                 />
+                </p>
+            <p>
             <input 
                 type="text"
                 name="author"
@@ -46,7 +49,8 @@ function UpdateSeries(props) {
                 onChange={handleChange}
                 placeholder="Enter Series Author:"
                 />
-
+                </p>
+            <p>
             <input 
                 type="text"
                 name="numberOfBooks"
@@ -54,7 +58,8 @@ function UpdateSeries(props) {
                 onChange={handleChange}
                 placeholder="Number in series:"
                 />
-
+                </p>
+            <p>
             <input 
                 type="text"
                 name="readAll"
@@ -62,14 +67,16 @@ function UpdateSeries(props) {
                 onChange={handleChange}
                 placeholder="Completed series:"
                 />
-
-            <input 
+                </p>
+            <p>
+            <input className = "titleStyles"
                 type="text"
                 name="bookTitles"
                 value={inputs.bookTitles}
                 onChange={handleChange}
                 placeholder="Book titles: "
                 />
+                </p>
         <button>Update</button>
     </form>
     )

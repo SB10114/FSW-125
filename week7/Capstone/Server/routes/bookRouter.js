@@ -45,7 +45,7 @@ bookRouter
         newSeries._id = uuidv4()
         seriesInfo.push(newSeries)
 
-        console.log(seriesInfo)
+        res.send(newSeries)
         res.status(201).send(`Successfully added ${newSeries._id} to the database`)
     })//POST one
 
@@ -61,7 +61,7 @@ bookRouter
         const displayId = req.params.displayId
         const seriesIndex = seriesInfo.findIndex(seriesInfo => seriesInfo._id === displayId)
         
-        Object.assign(displayId[seriesIndex], req.body)
+        Object.assign(seriesInfo[seriesIndex], req.body)
 
         res.status(200).send(`Resource sucessfully updated`)
     })//PUT one

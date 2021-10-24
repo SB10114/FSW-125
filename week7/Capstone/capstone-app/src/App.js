@@ -34,7 +34,10 @@ function App() {
     updates.readAll = (updates.readAll === "true" ? true : false)  
 
     axios.post(`/seriesInfo`, updates)
-    .then(res => setBook())
+    //.then(res => setBook())
+    .then(res => {
+      setBook(prevBooks => [...prevBooks, res.data])
+    })
     .catch(err => console.log(err))
   }
 
@@ -56,15 +59,13 @@ function App() {
     getBook()
   }, [])
 
-  const styles1 ={
-    marginLeft: "542px"
-  }
+
   return (
-  <div>
+  <div className = 'app'>
     <div>
       <AddSeries submit={addSeries} />
   </div>
-   <form style={styles1}>
+   <form className = "queryForm">
      <input  name="query" onChange={handleChange} placeholder= "Enter # in series:"></input>
      <button onClick={getOneBook}>Search by #</button>
    </form>
@@ -80,7 +81,6 @@ function App() {
           id = {books._id} 
           updateSeries = {updateSeries}
           deleteSeries = {deleteSeries} 
-          
           />
       )}
     </div>
